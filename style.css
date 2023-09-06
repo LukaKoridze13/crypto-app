@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: azure;
+}
+
+#screen {
+  width: 100vw;
+  height: 100dvh;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-button {
+  width: 100%;
+  max-width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  font-size: 18px;
+}
+
+.green {
+  background-color: rgb(149, 220, 178);
+}
+
+.red {
+  background-color: rgb(220, 158, 149);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 12px;
+  position: absolute;
+  bottom: 16px;
+  width: 100vw;
+}
+
+.modal {
+  width: 100vw;
+  height: 100dvh;
+  background-color: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(2px);
+
+  display: none;
+  place-content: center;
+}
+
+.box {
+  width: 80vw;
+  padding: 16px;
+  border-radius: 20px;
+  background-color: rgb(232, 227, 235);
+  padding-top: 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  position: relative;
+}
+
+.secondary-button {
+  width: 100%;
+  max-width: 120px;
+  height: 40px;
+  border-radius: 16px;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid green;
+  padding: 8px;
+}
+
+.close-modal {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 32px;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview {
+  width: 148px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.agree{
+  display: flex;
+  align-items: center;
+  max-width: none;
+  width: fit-content;
+  gap: 16px;
+  padding-inline: 16px;
+}
+
+.agree input {
+  transform: scale(1.3);
+}
+
+.agree label {
+  margin-top: 2px;
+}
